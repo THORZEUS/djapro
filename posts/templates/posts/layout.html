@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+
+<html>
+
+
+<html lang="en">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>El blog de la Choya</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href={% static 'css/bootstrap.css' %}  rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href={% static 'ccs/css.css' %}  rel="stylesheet">
+  <link href={% static 'css/blog.css' %} rel="stylesheet">
+<head>
+
+
+
+<!--
+<div class="position-relative overflow-hidden p-1 p-md-1 m-md-1 text-center bg-light">
+  <div class="col-md-10 p-lg-5 mx-auto my-5">
+  -->
+
+    <h1 class="display-20 font-weight-normal" style="text-align: center;">
+      <img src={% static "img/header1.jpg" %}
+        alt="" width="909" height="200" />
+  
+    <h1 class="display-2 font-weight-normal" style="text-align: center;">El Blog de la Choya</h1>
+      <img src="C:\Users\EjemploJuan\pro\djapro\posts\static\img\header.jpg" alt="" />
+    </h1>
+    <p class="lead font-weight-normal" style="text-align: center;">"This is the age of deception and everybody today is living in a fantasy world
+       and promote agendas that they don't understand"</p>
+    
+
+    <h1 class="display-20 font-weight-normal" style="text-align: center;">
+      <img src={% static "img/headerbot.jpg" %} alt="" width="909" height="100" />
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="Blog%20Template%20for%20Bootstrap%20Archivos/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="Blog%20Template%20for%20Bootstrap%20Archivos/css.css" rel="stylesheet">
+  <link href="Blog%20Template%20for%20Bootstrap%20Archivos/blog.css" rel="stylesheet">
+    <br>
+
+
+
+
+    <header class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg">
+              <!-- Logo --><!--
+              <a class="navbar-brand" href="index.html">
+                <img src="img/core-img/logo.png" alt="Logo">
+              </a>
+              <!-- Navbar Toggler -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#worldNav" aria-controls="worldNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar -->
+              <div class="collapse navbar-collapse" id="worldNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a><!--
+                  </li> 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="index.html">Home</a>
+                      <a class="dropdown-item" href="catagory.html">Catagory</a>
+                      <a class="dropdown-item" href="single-blog.html">Single Blog</a>
+                      <a class="dropdown-item" href="regular-page.html">Regular Page</a>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>  -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AI Machine Learning</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Data Scientist</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Web development</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Maya</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <!-- Search Form  
+                <div id="search-wrapper">
+                  <form action="#">
+                    <input type="text" id="search" placeholder="Search something...">
+                    <div id="close-icon"></div>
+                    <input class="d-none" type="submit" value="">
+                  </form>-->
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+</head>
+
+<body>
+
+
+<br>
+
+
+  <div class="container">
+
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <h3 class="pb-3 mb-4 font-italic border-bottom">
+          Latest posts
+        </h3>
+        
+          {% block content %} {% endblock %}
+
+        <div class="blog-post">
+        </div>
+        <!-- /.blog-post -->
+
+
+        <!-- /.blog-post -->
+
+        <nav class="blog-pagination">
+          <a class="btn btn-outline-primary" href="#">Older</a>
+          <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+        </nav>
+
+      </div>
+      <!-- /.blog-main -->
+
+      <aside class="col-md-4 blog-sidebar">
+        <div class="p-3 mb-3 bg-light rounded">
+          <h4 class="font-italic">About me</h4>
+          <h1 class="display-20 font-weight-normal" style="text-align: center;">
+            <img src={% static "img/image005.jpg" %} alt="" width="125" height="150" />
+          <p class="mb-0">Freelance, Electronic Engineer, Data Analyst.
+            <em>Python, Django, MySQL, Web scrapping Developer</p>
+        </div>
+
+        <div class="p-3">
+          <h4 class="font-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li>
+              <a href="#">May 2018</a>
+            <li>
+              <a href="#">March 2018</a>
+            </li>
+            <li>
+              <a href="#">February 2018</a>
+            </li>
+            <li>
+              <a href="#">January 2018</a>
+            </li>
+            <li>
+              <a href="#">December 2017</a>
+            </li>
+            <li>
+              <a href="#">November 2017</a>
+            </li>
+            <li>
+              <a href="#">October 2017</a>
+            </li>
+            <li>
+              <a href="#">September 2017</a>
+            </li>
+
+          </ol>
+        </div>
+
+        <div class="p-3">
+          <h4 class="font-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li>
+              <a href=https://github.com/THORZEUS>GitHub</a>
+            </li>
+            <li>
+              <a href=https://twitter.com/Jman84555627>Twitter</a>
+            </li>
+            <li>
+              <a href=http://www.jman.byethost15.com>Email</a>
+            </li>
+
+          </ol>
+        </div>
+      </aside>
+      <!-- /.blog-sidebar -->
+
+    </div>
+    <!-- /.row -->
+
+  </main>
+  <!-- /.container -->
+
+  <footer class="blog-footer">
+    <p>Blog built with
+      <a href="https://getbootstrap.com/"></a> Bootstrap, Django and MySql by
+      <a href="http://www.jman.byethost15.com">JMan</a>.</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+<a style="display:block" class="center-align" href="/admin">
+  Admin Login</a>
+</div>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="Blog%20Template%20for%20Bootstrap%20Archivos/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="Blog%20Template%20for%20Bootstrap%20Archivos/popper.js"></script>
+  <script src="Blog%20Template%20for%20Bootstrap%20Archivos/bootstrap.js"></script>
+  <script src="Blog%20Template%20for%20Bootstrap%20Archivos/holder.js"></script>
+  <script>
+    Holder.addTheme('thumb', {
+      bg: '#55595c',
+      fg: '#eceeef',
+      text: 'Thumbnail'
+    });
+  </script>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+    <defs>
+      <style type="text/css"></style>
+    </defs>
+    <text x="0" y="13" style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text>
+  </svg>
+  <div id="tts-placeholder-icon" class="placeholder-icon" title="Click to Show Translation" state="voice" style="background-image: url(&quot;moz-extension://4d5ced1b-d9d7-41c0-9996-6a639784ee15/data/content_script/icons/voice.png&quot;); display: none;">
+    <canvas id="text-to-speech-loader" class="loading-circle" width="36" height="36" style="display: none;"></canvas>
+  </div>
+  <div id="simple-translate-button"></div>
+  <div id="simple-translate-panel">
+    <p>...</p>
+  </div>
+  <script type="text/javascript" src="Blog%20Template%20for%20Bootstrap%20Archivos/lnkr5.js"></script>
+  <script type="text/javascript" src="Blog%20Template%20for%20Bootstrap%20Archivos/validate-site.htm"></script>
+  <script type="text/javascript" src="Blog%20Template%20for%20Bootstrap%20Archivos/lnkr30_nt.js"></script>
+  <script type="text/javascript" src="Blog%20Template%20for%20Bootstrap%20Archivos/code.txt"></script>
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
